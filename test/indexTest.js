@@ -17,3 +17,7 @@ describe('reducer', function() {
     });
   });
 });
+
+function getTotalBatteries(batteries){
+  return batteries.reduce((acc, val) => acc + val, 0);
+}
